@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require "bunlder"
+Bundler.require
+
+module LaunchConfigurationCleaner
+  class CLI < Thor
+    default_task :execute
+
+    desc "execute"
+    def execute
+      puts "hoge"
+    end
+  end
+end
+
+LaunchCOnfigurationCleaner::CLI.start(ARGV)
