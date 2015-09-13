@@ -3,7 +3,7 @@ require "aws-sdk"
 module LaunchConfigurationCleaner
   class Agent
     def client
-      @client ||= Aws::AutoScaling::Client.new(region: 'ap-southeast-1')
+      @client ||= Aws::AutoScaling::Client.new
     end
 
     def launch_configurations
