@@ -5,7 +5,7 @@ module LaunchConfigurationCleaner
   class CLI < Thor
     default_task :execute
 
-    desc "execute", "hoge"
+    desc "execute", "Fetch LaunchConfiguration list from AWS and you can choose which you want to remove."
     def execute
       agent = Agent.new
       agent.list_current_configurations
