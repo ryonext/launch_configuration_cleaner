@@ -1,8 +1,6 @@
 # LaunchConfigurationCleaner
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/launch_configuration_cleaner`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+You can remove many LaunchConfigurations (AWS autoscaling setting) easier.
 
 ## Installation
 
@@ -22,13 +20,43 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+1. Execute `clean_lc` in your terminal.
 
-## Development
+```
+$ clean_lc
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
+2. Then, this app shows your LaunchConfigurations.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release` to create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```
+[
+  YourLaunchConfiguration1,
+  YourLaunchConfiguration2,
+  YourLaunchConfiguration3,
+  YourLaunchConfiguration4,
+  YourLaunchConfiguration5,
+]
+```
+
+3. Enter "y", if you want to remove a LaunchConfiguration
+
+```
+Do you want to delete YourLaunchConfiguration1? (y/n)
+```
+
+4. After judging each configurations, you need to enter a final answer.
+
+```
+These launch configurations will be deleted.
+[
+  YourLaunchCOnfiguration1,
+  YourLaunchCOnfiguration3,
+  YourLaunchCOnfiguration5,
+]
+Are you sure? (yes or no)
+```
+
+If you enter "yes", LaunchConfigurations will be deleted.
 
 ## Contributing
 
