@@ -49,9 +49,9 @@ Do you want to delete YourLaunchConfiguration1? (y/n)
 ```
 These launch configurations will be deleted.
 [
-  YourLaunchCOnfiguration1,
-  YourLaunchCOnfiguration3,
-  YourLaunchCOnfiguration5,
+  YourLaunchConfiguration1,
+  YourLaunchConfiguration3,
+  YourLaunchConfiguration5,
 ]
 Are you sure? (yes or no)
 ```
